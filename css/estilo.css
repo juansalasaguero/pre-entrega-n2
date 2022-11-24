@@ -123,7 +123,7 @@ sectionA, sectionB, sectionC, header, footer{
     padding: 1 rem;
     margin: 1px;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
     .container { 
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: 0.4fr 1.4fr 0.2fr 1fr;
