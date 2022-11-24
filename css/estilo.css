@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container {  display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.4fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aside barra-de-navegacin barra-de-navegacin"
+      "aside section section1"
+      "aside footer footer";
+}
+  
+.barra-de-navegacin { 
+    background-color: rgb(121, 255, 255);
+    grid-area: barra-de-navegacin; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+}
+.menu li{
+    Display: inline-block;
+	Text-align: center;
+    border: solid black 1px;
+    padding: 25px;
+}
+.menu li a{
+	text-decoration: underline;
+	Display:inline-block;
+    color: white;
+    border-radius: 20%;
+}
+.menu li a:hover{
+    background-color: white;
+    border: solid black 1px;
+    transform: scale(1.4,1.4);
+    color: black;
+}
+.aside {
+    background-image: linear-gradient(to bottom, rgb(121, 255, 255), grey, white);
+    grid-area: aside; 
+    }
+  
+.tituloFormulario{
+    font-size:x-large;
+    text-align: center;
+}
+
+.section { 
+    border: solid black;
+    text-align: center;
+    background-color: rgb(121, 255, 255);
+    grid-area: section;
+}
+.tituloBeneficios{
+    font-size: 50px;
+}
+a{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+.subtituloVideo{
+    opacity: 30%;
+    font-size: medium;
+ }
+  
+.section1 { 
+    border: solid black;
+    background-color: brown;
+    grid-area: section1;
+    text-align: center;
+    list-style-type: none;
+}
+.tituloPreguntas{
+    font-size: 50px;
+}
+.preguntas{
+    line-height: 30px;
+}
+.respuestas{
+    background-color: black;
+    color: white;
+}
+.parrafo{
+    color: white;
+    align-self: end;
+}
+.footer { 
+    background-color: yellow;
+    grid-area: footer; 
+}
+.body1{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    padding: 1em;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+sectionA, sectionB, sectionC{
+    background-color: grey;
+}
+header, footer{
+    text-align: center;
+    background-color: chocolate;
+    margin: 1px;
+}
+sectionA, sectionB, sectionC, header, footer{
+    flex: 1;
+    padding: 1 rem;
+    margin: 1px;
+}
+@media only screen and (min-width: 768px){
+    .container { 
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 0.4fr 1.4fr 0.2fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "aside barra-de-navegacin"
+          "aside section"
+          "aside section1"
+          "aside footer";
+    }
+}

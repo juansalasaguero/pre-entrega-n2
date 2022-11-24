@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <title>Agua vida</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="aside">
+            <h1 class="animate__animated animate__wobble tituloFormulario">Completa este formulario para sumarte a nuestra clientela</h1>
+            <br>
+            <form action="">
+                <fieldset>
+                    <legend>DATOS PERSONALES</legend>
+                    <div>
+                        <br>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="surname">Apellido</label>
+                        <input type="text" name="surname" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="phone">Telefono</label>
+                        <input type="numbers" name="phone" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="e-mail">Correo electronico</label>
+                        <input type="e-mail" name="e-mail" required>
+                    </div>
+                    <br>
+                </fieldset>
+            </form>
+            <br>
+            <form action="">
+                <fieldset>
+                    <legend>UBICACION Y HORARIO</legend>
+                  <div>
+                    <br>
+                    <label for="location">Ubicacion</label>
+                    <select name="location" id="">
+                        <option value="location">salta capital</option>
+                        <option value="location">cerrillos</option>
+                        <option value="location">el carril</option>
+                        <option value="location">la merced</option>
+                        <option value="location">moldes</option>
+                        <option value="location">la viña</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div>
+                    <label for="street">Calle</label>
+                    <input type="text" name="street" required>
+                  </div>
+                  <br>
+                  <div>
+                    <label for="department number">numero de departamento</label>
+                    <input type="numbers" name="department number" required>
+                  </div>
+                  <br>
+                </fieldset>
+            </form>
+            <br>
+            <form action="">
+                <fieldset>
+                    <legend>PRODUCTO SOLICITADO COTIDIANAMENTE</legend>
+                    <br>
+                    <div>
+                        <label for="producto">producto</label>
+                        <select name="producto" id="">
+                            <option value="prodcuto">bidon 5lto</option>
+                            <option value="prodcuto">bidon 12lto</option>
+                            <option value="prodcuto">bidon 25lto</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="number">cuantos</label>
+                        <input type="number" name="nomber">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="choice">¿tiene bidenes para devolver?</label><br>
+                            <input type="radio" name="choice" value="si" required>si
+                            <input type="radio" name="choice" value="no" required>no
+                    </div>
+                    <br>
+                    <div>
+                        <label for="number">cuantos</label>
+                        <input type="number" name="nomber" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="text">¿necesita un dispenser?</label> <br>
+                        <input type="radio" name="text" value="si" required>si
+                        <input type="radio" name="text" value="no" required>no
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="ENVIAR DATOS">
+                        <input type="submit" value="BORRAR DATOS">
+                    </div>
+                </fieldset>
+            </form>
+    
+        </aside>
+        <nav class="barra-de-navegacin">
+            <div class="logo">
+                <img src="./img/android-chrome-192x192.png" alt="logo">
+            </div>
+            <div class="nav">
+                <ul class="menu">
+                    <li>AGUA VIDA SRL <br>(COLOCAR INFORMACION DE RELEVANCIA)
+                    </li>
+                    <li>
+                        <a href="./hacerUnPedido.html">hacer un pedido</a>
+                    </li>
+                    <li>
+                        <a href="./sobreNosotros.html">sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section">
+            <h1 class="animate__animated animate__rubberBand tituloBeneficios">Beneficios de beber agua</h1>
+            <br>
+            <p>
+                Para tener una buena salud es importante consumir agua a diario, nuestro equipo de apoyo nutricional te informara sobre algunos beneficios de beber agua natural
+            </p>
+            <a href="./beneficiosSobreElConsumoDelAgua.html">Click aqui</a>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OfDYFy4Z_M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2 class="subtituloVideo">video informativo sobre la importancia del agua</h2>
+        </section>
+        <section class="section1">
+            <h1 class="animate__animated animate__rubberBand tituloPreguntas">Preguntas frecuentes</h1>
+            <br>
+            <div class="preguntas">
+                <ul>
+                    <li>
+                        <a href="./hacerUnPedido.html">¿Como hago un pedido?</a>
+                    </li>
+                    <li>
+                        <a href="./numeroContacto.html">¿Cual es el numero telefonico?</a>
+                    </li>
+                    <li>
+                        <a href="./sobreNosotros.html">¿Cual es el proceso de elaboracion de nuestro productos?</a>
+                    </li>
+                    <li>
+                        <a href="./sobreNosotros.html">¿Cuanto cuesta el servicio de entrega a domicilio de productos Vida?</a>
+                    </li>
+                    <li>
+                        ¿Que tengo que tener para ser cliente?
+                        <p class="respuestas">
+                            Es muy fácil. Comunicate sin cargo al 0800-0000-00 o llena nuestro fomrulario y comenzá a disfrutar nuestro servicio y productos.
+                        </p>
+                    </li>
+                    <li>
+                        ¿En que dia y horario pasan por mi domicilio?
+                        <p class="respuestas">
+                            Siempre te ofrecemos diferentes alternativas para poder encontrarte. Para tener más información, por favor, comunicate sin cargo al 0800-0000-00.
+                        </p>
+                    </li>
+                    <li>
+                        ¿que pasa si no estoy en mi domicilio cuando pasa el repartidor?
+                        <p class="respuestas">
+                            Si no estás, no hay inconveniente. Podés llamarnos al 0800-0000-00 y recoordinar nuestra visita.
+                        </p>
+                    </li>
+                    <li>
+                        ¿Como puedo obtener dispensers frio-calor?
+                        <p class="respuestas">
+                            Si querés un dispenser, podés solicitarlo desde el formulario Quiero ser cliente, por Whatsapp, o llamando al 0800-0000-00.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="parrafo">
+                <p>
+                    Paga tus productos en efectivo, tarjeta de credito, debito y transferencia bancaria
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <h3>
+                CONTACTATE CON NOSOTROS
+            </h3>
+        </section>
+        <br>
+        <section class="seccion3">
+            <img src="#" alt="icono de whatsapp">
+            <img src="#" alt="icono de instagram">
+            <img src="#" alt="icono de facebock">
+        </section>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <footer class="footer">
+        <div>
+            <h4>
+                GRACIAS POR TU VISITA
+            </h4>
+            <p class="p1">
+                El agua es el bien más preciado de nuestro planeta, sin la cual no sería posible la vida ni nuestra existencia. Es también un recurso que empleamos a diario, a menudo sin darnos cuenta del valor que tiene que hoy en día podamos contar con un suministro garantizado de agua potable.
+            </p>
+        </div>
+    </footer>
+
+        </footer>
+      </div>
+</body>
+</html>
